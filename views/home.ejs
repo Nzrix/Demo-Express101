@@ -1,0 +1,32 @@
+<%- include("./components/header.ejs") %>
+
+  <body>
+    <img src="pl-main-logo.png" alt="" />
+    <h1>
+      <%= title %>
+    </h1>
+      <!-- <% data.forEach(element => { %>
+        <h1><%= element %></h1>
+      <% }) %> -->
+    <table id="leagueTable">
+      <thead>
+        <tr>
+          <th>index</th>
+          <th>ทีม</th>
+          <th>ชนะ</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <% data.forEach(element => { %>
+          <tr>
+            <td><%= element[0] %></td>
+            <td><%= element[1] %></td>
+            <td><%= element[2] %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <a href="/add-data" >Add Data</a>
+  </body>
+</html>

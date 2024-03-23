@@ -1,0 +1,12 @@
+<%- include("./components/header.ejs") %>
+
+  <body>
+    <h1>เพิ่มผลการแข่งขัน</h1>
+    <form action="/add-data" method="post">
+      <input type="text" id="index" name="index" placeholder="Index Team" required /><br />
+      <input type="text" id="team" name="team" placeholder="team" required /><br />
+      <input type="text" id="status" name="status" placeholder="status" required /><br />
+      <button type="submit" class="btn">Add Result</button>
+    </form>
+  </body>
+</html>
